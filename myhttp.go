@@ -17,5 +17,5 @@ func supGurl(w http.ResponseWriter, r *http.Request) {
 func handleRequests() {
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/sup", supGurl)
-	log.Fatal(http.ListenAndServe(":3000", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:3000", nil))
 }
