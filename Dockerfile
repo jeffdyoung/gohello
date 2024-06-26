@@ -1,4 +1,4 @@
-FROM golang:1.15 AS build
+FROM registry.ci.openshift.org/ocp/builder:rhel-9-golang-1.21-builder-multi-openshift-4.16 AS build
 
 WORKDIR /go/src/app
 COPY . .
